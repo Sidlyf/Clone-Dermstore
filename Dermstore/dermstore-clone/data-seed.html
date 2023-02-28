@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data</title>
+    <style>
+        #main {
+            display: flex;
+            height: 80px;
+            width: 80%;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 30px;
+        }
+        
+        #main>div {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <button>
+btn
+    </button>
+    <div id="main"></div>
+    <input type="text" id="input">
+</body>
+
+</html>
+<script>
+    var data = [{
+        image: "https://s1.thcdn.com//productimg/70/70/11355230-1094871580238032.jpg",
+        hdesc: "iS Clinical Body Complex(6 fl.oz)",
+        para: "in stock usually dispatched within 24 hours",
+        price: 75.00,
+        quantity: 1,
+    }, {
+        image: "https://s1.thcdn.com//productimg/70/70/12004943-1784871984217738.jpg",
+        hdesc: "Epionce Purifying Wash Blemish Clearing Tx(8 fl.oz)",
+        para: "in stock usually dispatched within 24 hours",
+        price: 44.00,
+        quantity: 1,
+    }, {
+        image: "https://s1.thcdn.com//productimg/70/70/12004943-1784871984217738.jpg",
+        hdesc: "Epionce Purifying Wash Blemish Clearing Tx(8 fl.oz)",
+        para: "in stock usually dispatched within 24 hours",
+        price: 44.00,
+        quantity: 1,
+    }];
+    setlocal(data)
+
+    document.querySelector("button").addEventListener("click", setlocal)
+
+
+    // // var inp = document.querySelector("#input").value
+
+
+    // data.forEach(function(elem) {
+    //     var main = document.querySelector("#main")
+    //     var div1 = document.createElement("div")
+    //     var img1 = document.createElement("image")
+    //     img1.setAttribute("src", elem.image)
+    //     var h1 = document.createElement("h1").innerText = elem.hdesc
+    //     var p1 = document.createElement("p").innerText = elem.para
+    //     div1.append(img1, h1, p1)
+    //     var div2 = document.createElement("div")
+    //     var div3 = document.createElement("div")
+    //     div3.innerText = elem.price
+
+    //     var div4 = document.createElement("div")
+    //     div4.innerText = inp
+    //         // var div5 = document.createElement("div")
+    //         // var div6 = document.createElement("div")
+    //     div2.append(div3, div4)
+    //     main.append(div1, div2)
+
+
+    // });
+    function setlocal() {
+
+        localStorage.setItem("main", JSON.stringify(data))
+    }
+</script>

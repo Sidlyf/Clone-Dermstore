@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+hr {
+    color: gray;
+}
+
+#id1 {
+    display: flex;
+    height: 40px;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+#id2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin-right: -100px;
+    /* overflow: hidden; */
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "lato regular", Helvetica, Arial, sans-serif;
+}
+
+#main {
+    height: 100px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* margin-left: 30px; */
+    /* border: 1px solid blue; */
+    /* overflow: hidden; */
+}
+
+#main>div {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#main>div>div:nth-child(1) {
+    /* border: 1px solid red; px*/
+    height: 100%;
+    width: 55%;
+    display: flex;
+}
+
+#main>div>div:nth-child(2) {
+    height: 100%;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 200px 200px 250px 80px;
+    grid-template-rows: repeat(1, 1fr);
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#idpara {
+    align-items: center;
+    justify-content: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    font-family: "lato regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.428;
+    color: #000;
+    font-weight: 500;
+}
+
+#main>div>div:nth-child(2)>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#quantity>h3 {
+    font-family: "lato regular", Helvetica, Arial, sans-serif;
+    line-height: 2;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-size: 16px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    padding: inherit;
+}
+
+#quantity>button:nth-child(1):hover {
+    cursor: pointer;
+}
+
+#quantity>button {
+    width: 40px;
+    font-size: 20px;
+    border: none;
+    background-color: white;
+}
+
+#quantity>button:hover {
+    color: gray;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#hp>h1 {
+    font-family: "lato regular", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    height: auto;
+    overflow: hidden;
+}
+
+#hp>h1:hover {
+    cursor: pointer;
+}
+
+#cutt {
+    border: none;
+    height: 25px;
+    width: 25px;
+}
+
+#cutt:hover {
+    background-color: white;
+}
+
+#favdiv {
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-left: 100px;
+    width: auto;
+    padding-left: -200px;
+}
+
+#favdiv>div {
+    height: 50px;
+    margin-top: 20px;
+}
+
+#favdiv:hover {
+    background-color: rgb(240, 239, 239);
+    cursor: pointer;
+}
+
+
+/* #favh {} */
+
+#favdiv>div>p {
+    /* font-size: 30px; */
+    width: 200px;
+    font-family: "lato regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.428;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+    text-transform: none;
+    color: #222;
+    font-weight: 400;
+}
+
+#subtot {
+    font-family: "lato regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    font-weight: 700;
+}
+
+@media all and(min-width:451px)and(max-width:750px) {
+    #main>div:nth-child(1) {
+        padding-top: -600px;
+    }
+}

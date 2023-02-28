@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,200;0,400;0,500;1,500&family=Roboto:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9301aff29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <style>
+        .container {
+
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, auto);
+            background-color: rgba(148, 148, 148, 0.123)
+        }
+
+        .box {
+
+            width: 100%;
+            height: auto;
+            margin: auto;
+
+        }
+
+        #img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        h2 {
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+
+            /* margin-bottom:-25px; */
+            font-weight: 500;
+
+        }
+
+        p {
+            font-size: 25px;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+
+        button {
+            padding: 10px 40px 10px 40px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.863);
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        button:hover {
+            background-color: rgba(14, 13, 13, 0.555);
+            cursor: pointer;
+        }
+
+        .container:hover {
+            cursor: pointer;
+        }
+
+        .threeItemContainer {
+
+            height: auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 10px;
+        }
+
+        .itemTitle {
+
+            line-height: 14px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            font-weight: 400;
+
+        }
+
+        .threeItemContainer img {
+            margin: 0px 30px 0px 30px;
+
+        }
+
+        .threeItemBox h3 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            /* margin-top: 4px; */
+            font-style: inherit;
+
+
+        }
+
+        .threeItemBox p {
+            text-align: center;
+            font-family: "lato regular", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+
+        }
+
+        .companyItem {
+
+            height: auto;
+            width: 100%;
+
+
+        }
+
+        .companyItem p {
+            font-size: 14px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .companyContainer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 10px;
+        }
+
+        .companyItem img {
+            margin-left: 35px;
+        }
+
+        .containerFour {
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, auto);
+            height: 400px;
+            width: 100%;
+            gap: 10px;
+            /* margin-top: 60px; */
+
+        }
+
+        .itemFour {
+
+            height: auto;
+            width: 98%;
+            margin: auto;
+        }
+
+        .itemFour img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .itemFour h2 {
+            font-family: "Poly Regular", "Times New Roman", serif;
+            font-size: 26px;
+            font-weight: 400;
+            text-align: center;
+
+        }
+
+        .itemFour p {
+            font-family: "lato regular", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            text-align: center;
+            font-weight: 500;
+            line-height: 1.428;
+            /* margin-top: 30px; */
+        }
+
+        .itemFour button {
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+
+        /* Medium screens */
+        @media all and (min-width: 451px) and (max-width: 750px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(2, auto);
+            }
+
+            .threeItemContainer {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, auto);
+            }
+
+            .companyContainer {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            .containerFour {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+
+        /* Small screens */
+        @media all and (min-width: 100px) and (max-width: 450px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(2, auto);
+            }
+
+            .threeItemContainer {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(3, auto);
+            }
+
+            .companyContainer {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            .containerFour {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="navbar">
+
+        <div class="first-row">
+            <img src="./icons/header_logo.svg" alt="">
+            <div class="search">
+                <input type="text" name="search" placeholder="search for product and brand" id="">
+            </div>
+            <div class="account"><img src="./icons/account.svg" alt="">
+                <a href="login.html">Account</a>
+            </div>
+            <div class="account"><img src="./icons/cart.svg" alt="">
+                <a href="cart.html">Cart</a>
+            </div>
+
+        </div>
+        <div class="second-row">
+
+            <div class="link"><a href="">Brands</a></div>
+            <div class="link"><a href="skin-care.html">skin care </a></div>
+            <div class="link"><a href="makeup.html">make up </a></div>
+            <div class="link"><a href="hair.html">hair care </a></div>
+            <div class="link"><a href="bath.html">bath & body </a></div>
+            <div class="link"><a href="tools.html">tools & devices </a></div>
+            <div class="link"><a href="gifts.html">tools & devices </a></div>
+            <div class="link"><a href="beautyfix.html">BeautyFIX</a></div>
+            <div class="link"><a href="skin-101.html">Skin 101</a></div>
+        </div>
+
+
+    </section>
+
+
+    <div class="container">
+        <div class="box">
+            <img id="img"
+                src="https://static.thcdn.com/images/medium/webp/widgets/208-us/29/0426-STDCRE-34886-JCS-May-BeautyFix-Dermstore_Mobile_600x600-011829.jpg"
+                alt="top img">
+        </div>
+        <div class="box">
+            <h2>HERE COMES <br> THE SUN</h2>
+            <p>Get your routine summer-ready with this month’s BeautyFIX.</p>
+            <button><a href="/beauty-box/beautyfix-subscription/12898514.html">GET YOUR BEAUTYFIX</a></button>
+        </div>
+
+    </div>
+
+    <h2 class="itemTitle">What You Get</h2>
+
+    <div class="threeItemContainer">
+        <div class="threeItemBox">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/12/original-full-deluxe-travel-size-body-115612.jpg"
+                alt="1">
+            <h3 class="threeItemEditorial_itemTitle">Full &amp; Deluxe Travel Sizes</h3>
+            <p>Each month, receive 5+ products with over $100 total retail value.</p>
+        </div>
+        <div class="threeItemBox">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/50/original-exclusive-savings-body-115650.jpg"
+                alt="2">
+            <h3>Exclusive Savings</h3>
+            <p>Enjoy subscriber savings &amp; offers on full-size version of your favorites. Plus, only pay shipping on
+                your first box!</p>
+        </div>
+        <div class="threeItemBox">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/55/original-premium-products-body-115655.jpg"
+                alt="3">
+            <h3>Premium Products</h3>
+            <p>Our experts curate the best professional &amp; prestige products, guaranteed 100% authentic.</p>
+        </div>
+    </div>
+    <h3 class="itemTitle">We're In Good Company</h3>
+    <div class="companyContainer">
+        <div class="companyItem">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/41/original-original-bfix-elle-logo-122157-065141.jpg"
+                alt="">
+            <p>"You already run to Dermstore for <br> derm-approved skincare and beauty <br> products, so why not sign
+                up to get <br> full and trial-sized versions of said <br> products delivered to your door each <br>
+                month? And these aren’t just under- <br> the-radar finds: we’re talking Boscia, <br> Oribe, Tocca and
+                other elite beauty <br> brands."
+            </p>
+        </div>
+        <div class="companyItem">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/52/original-original-bfix-forbes-logo-122201-065452.jpg"
+                alt="">
+            <p>
+                "While other boxes feature sample <br> sizes of four or five products, <br> BeautyFix includes six or
+                more <br> of full or deluxe travel sizes <br> that last several weeks. The total box <br> value is
+                guaranteed to be $100 or <br> more, but the monthly subscription..."
+            </p>
+        </div>
+        <div class="companyItem">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/37/original-original-bfix-refinery-logo-122247-065837.jpg"
+                alt="">
+            <p>
+                "If your love for all things retinol, <br> vitamin C, and AHA knows no <br> bounds, Dermstore's beauty
+                box is <br> going to be the best thing to hit your <br> doorstep. You can either subscribe to <br> the
+                box... or buy 'em à la carte..."
+            </p>
+        </div>
+        <div class="companyItem">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/208-us/28/original-original-bfix-totalbeauty-logo-122514-070028.jpg"
+                alt="">
+            <p>
+                "Those who want to receive a variety <br> of high-end skin care brands in their <br> makeup boxes should
+                go with <br> Dermstore's BeautyFIX <br> packages...BeautyFIX boxes are <br> curated by skin experts and
+                brim with <br> at least six full and deluxe travel- <br> sized skin care, makeup and hair <br> products
+                that are hard to find."
+            </p>
+        </div>
+    </div>
+    <div class="containerFour">
+        <div class="itemFour">
+            <img src="https://static.thcdn.com/images/medium/webp/widgets/208-us/04/original-one-time-purchase-body-125326-033753-034304.jpg"
+                alt="5">
+        </div>
+        <div class="itemFour">
+            <h2>Let's Get Started!</h2>
+            <p>There are several options to choose from, with our monthly rolling subscription starting at $24.95. Sign
+                up for 3, 6 or 12 months and save more on your subscription.</p>
+            <p>Receive free shipping on every monthly box! Cancel anytime.
+                Limited subscriptions available and all sales are final.&nbsp;</p>
+            <button><a href="/beauty-box/beautyfix-subscription/12898514.html"
+                    class="twoItemImageTextBlock_description_itemButton">View Subscription Options</a></button>
+        </div>
+    </div>
+
+    <section class="mid" id="">
+        <div class="wrapper1">
+            <div class="left-part">
+                <p>
+                    Sign up to our newsletters and receive the latest exclusive discounts and deals
+                </p>
+                <button class="btn btn-primary">sign me up</button>
+            </div>
+    
+            <div class="right-part">
+                <p>Connect with us</p>
+                <div class="icons-part">
+                    <div class="icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="wrapper2">
+    
+            <div class="left">
+                <h4>Customere Service</h4>
+                <p>Help Center / FAQs</p>
+                <p>Returns</p>
+                <p>Shipping Information</p>
+                <p>Order Status</p>
+                <p>Cookie Settings</p>
+            </div>
+    
+            <div class="right">
+                <div>
+                    <h4>My Account</h4>
+                    <p>Manage My Subscriptions</p>
+                    <p>My Rewards</p>
+                    <p>My Favorites</p>
+                    <p>Referrals</p>
+                    <p>Order History</p>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <p>About us</p>
+                    <p>Press</p>
+                    <p>What is klarna?</p>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <p>Privacy Policy</p>
+                    <p>Terms & conditions</p>
+                    <p>Modern Slavery Statetement</p>
+                    <p>Product Recall</p>
+                    <p>Accessibility</p>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    
+    <section class="end">
+    
+        <div class="left">
+            <img src="./icons/copyright.svg" alt="">
+            <p>2022 © The Hut.com Ltd.</p>
+        </div>
+    
+        <div class="right">
+    
+            <h4>Pay Securely with</h4>
+    
+    
+            <img src="./icons/visa-electron.svg" alt="">
+            <img src="./icons/visa.svg" alt="">
+            <img src="./icons/paypal.svg" alt="">
+            <img src="./icons/mastercard.svg" alt="">
+            <img src="./icons/maestro.svg" alt="">
+            <img src="./icons/americanexpress.svg" alt="">
+            <img src="./icons/discover.svg" alt="">
+            <img src="./icons/dixersclub.svg" alt="">
+            <img src="./icons/applepay.svg" alt="">
+            <img src="./icons/aferpay.svg" alt="" srcset="">
+            <img src="./icons/klarna.svg" alt="">
+            <img src="./icons/sezzle.svg" alt="">
+    
+        </div>
+    
+    </section>
+
+
+</body>
+
+</html>

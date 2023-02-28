@@ -1,0 +1,242 @@
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  section {
+    width: 90%;
+  }
+}
+section > .wrapper .left-arrow,
+section > .wrapper .right-arrow {
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #eee;
+  padding: 10px;
+  z-index: 19;
+}
+section > .wrapper .left-arrow {
+  top: 50%;
+}
+section > .wrapper .right-arrow {
+  top: 50%;
+  right: 0;
+}
+section.now-trending {
+  position: relative;
+}
+section.now-trending h3 {
+  text-align: center;
+}
+section.now-trending > .wrapper::-webkit-scrollbar {
+  display: block;
+}
+section.now-trending > .wrapper {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+section.now-trending > .wrapper > .card:hover p {
+  text-decoration: none;
+}
+section.now-trending > .wrapper > .card {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  min-width: 350px;
+  cursor: pointer;
+}
+section.now-trending > .wrapper > .card img {
+  width: 100%;
+}
+section.now-trending > .wrapper > .card p {
+  text-align: center;
+  text-decoration: underline;
+}
+section.best-sellers {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  section.best-sellers {
+    width: 90%;
+  }
+}
+section.best-sellers h3 {
+  text-align: center;
+}
+section.best-sellers > .wrapper::-webkit-scrollbar {
+  display: none;
+}
+section.best-sellers > .wrapper {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+section.best-sellers > .wrapper > .card {
+  min-width: 250px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+section.best-sellers > .wrapper > .card > img {
+  width: 100%;
+}
+section.best-sellers > .wrapper > .card > button {
+  width: 100%;
+  border-radius: 2px;
+}
+
+section.mid {
+  padding-top: 1rem;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+section.mid > div {
+  margin: 1rem auto;
+}
+@media screen and (max-width: 1200px) {
+  section.mid > div {
+    width: 90%;
+  }
+}
+section.mid > .wrapper1 {
+  display: flex;
+  justify-content: flex-start;
+}
+section.mid > .wrapper1 > div:first-child {
+  margin-right: 1rem;
+}
+section.mid > .wrapper1 > div {
+  width: 50%;
+}
+section.mid > .wrapper1 > div > p {
+  margin-bottom: 1rem;
+}
+section.mid > .wrapper1 > div > .icons-part {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.mid > .wrapper1 > div > .icons-part > .icon {
+  background-color: #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+section.mid > .wrapper1 > div > .icons-part > .icon > i {
+  color: #353535;
+  font-size: 1.25rem;
+}
+section.mid > .wrapper1 > div > .icons-part > .icon:hover {
+  background-color: #f1f1f1;
+}
+@media screen and (max-width: 450px) {
+  section.mid > .wrapper1 {
+    flex-direction: column;
+  }
+  section.mid > .wrapper1 > div {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+section.mid > .wrapper2 {
+  display: flex;
+}
+section.mid > .wrapper2 > div {
+  width: 50%;
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  section.mid > .wrapper2 > .left {
+    width: 25%;
+  }
+  section.mid > .wrapper2 .right {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 450px) {
+  section.mid > .wrapper2 {
+    flex-wrap: wrap;
+  }
+  section.mid > .wrapper2 .left,
+  section.mid > .wrapper2 .right {
+    flex-basis: 100%;
+  }
+}
+section.mid > .wrapper2 > div:first-child {
+  margin-right: 1rem;
+}
+section.mid > .wrapper2 > .left > h4 {
+  user-select: none;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  border-top: 1px solid #999;
+  padding-top: 1rem;
+}
+section.mid > .wrapper2 > .left > p {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+section.mid > .wrapper2 > .left > P:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+section.mid > .wrapper2 > .right {
+  display: flex;
+}
+section.mid > .wrapper2 > .right > div {
+  width: 30%;
+  margin-right: 1rem;
+  border-top: 1px solid #999;
+  padding-top: 1rem;
+}
+section.mid > .wrapper2 > .right > div > h4 {
+  user-select: none;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+section.mid > .wrapper2 > .right > div > p {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+section.mid > .wrapper2 > .right > div > P:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+section.mid > .wrapper2 > .right > div:last-child {
+  margin-right: none;
+}
+@media screen and (max-width: 768px) {
+  section.mid > .wrapper2 > .right {
+    flex-direction: column;
+  }
+  section.mid > .wrapper2 > .right > div {
+    width: 100%;
+  }
+}
+section.end {
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+}
+@media screen and (max-width: 1200px) {
+  section.end {
+    width: 90%;
+  }
+}
+section.end > div {
+  width: 50%;
+}
+section.end > .left img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+section.end > .right h4 {
+  margin-bottom: 1rem;
+}

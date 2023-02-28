@@ -1,0 +1,57 @@
+section.main {
+	width: 80%;
+	margin: 2rem auto;
+
+
+	.filter {
+		width: fit-content;
+	}
+
+
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+		flex-grow: 1;
+		margin: 0rem auto;
+
+    .card {
+			cursor: pointer;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+
+      > img {
+        width: 100%;
+        padding-bottom: 1rem;
+      }
+
+      p {
+        padding: 1rem;
+      }
+
+			.rating {
+				img{
+					display: block;
+				}
+				span {
+					display: block;
+					font-size:1.1rem;
+					margin-left: 1rem;
+				}
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				font-weight: bold;
+			}
+
+
+      button {
+        width: 100%;
+				font-weight: bold;
+      }
+    }
+  }
+}

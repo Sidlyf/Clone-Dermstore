@@ -1,0 +1,288 @@
+section {
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+  }
+
+  > .wrapper {
+    .left-arrow,
+    .right-arrow {
+      position: absolute;
+      cursor: pointer;
+      user-select: none;
+      font-weight: bold;
+      font-size: 20px;
+      background-color: #eee;
+      padding: 10px;
+      z-index: 19;
+    }
+
+    .left-arrow {
+      top: 50%;
+    }
+
+    .right-arrow {
+      top: 50%;
+      right: 0;
+    }
+  }
+}
+
+section.now-trending {
+  position: relative;
+
+  h3 {
+    text-align: center;
+  }
+
+  > .wrapper::-webkit-scrollbar {
+    display: block; // TODO: change to none
+  }
+
+  > .wrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+    > .card:hover {
+      p {
+        text-decoration: none;
+      }
+    }
+
+    > .card {
+      margin-right: 1rem;
+      margin-left: 1rem;
+      min-width: 350px;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+
+      p {
+        text-align: center;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+section.best-sellers {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  > .wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  > .wrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+    > .card {
+      min-width: 250px;
+      text-align: center;
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+      > img {
+        width: 100%;
+      }
+
+      > button {
+        width: 100%;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+section.mid {
+  padding-top: 1rem;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  margin: 0 auto;
+  margin-top: 1rem;
+
+  > div {
+    margin: 1rem auto;
+
+    @media screen and (max-width: 1200px) {
+      width: 90%;
+    }
+  }
+
+  > .wrapper1 {
+    display: flex;
+    justify-content: flex-start;
+
+    > div:first-child {
+      margin-right: 1rem;
+    }
+
+    > div {
+      width: 50%;
+
+      > p {
+        margin-bottom: 1rem;
+      }
+
+      > .icons-part {
+        display: flex;
+        flex-wrap: wrap;
+
+        > .icon {
+          background-color: #e2e2e2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          margin-right: 10px;
+          border-radius: 50%;
+          cursor: pointer;
+
+          > i {
+            color: #353535;
+            font-size: 1.25rem;
+          }
+        }
+
+        > .icon:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+
+      > div {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  > .wrapper2 {
+    display: flex;
+
+    > div {
+      width: 50%;
+    }
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+      > .left {
+        width: 25%;
+      }
+
+      .right {
+        width: 75%;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      flex-wrap: wrap;
+      .left,
+      .right {
+        flex-basis: 100%;
+      }
+    }
+
+    > div:first-child {
+      margin-right: 1rem;
+    }
+
+    > .left {
+      > h4 {
+        user-select: none;
+        margin-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        border-top: 1px solid #999;
+        padding-top: 1rem;
+      }
+
+      > p {
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+      > P:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+
+    > .right {
+      display: flex;
+
+      > div {
+        width: 30%;
+        margin-right: 1rem;
+        border-top: 1px solid #999;
+        padding-top: 1rem;
+
+        > h4 {
+          user-select: none;
+          margin-bottom: 0.5rem;
+          padding-left: 0.5rem;
+        }
+
+        > p {
+          padding: 0.5rem;
+          cursor: pointer;
+          @media screen and (max-width: 768px) {
+          }
+        }
+        > P:hover {
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+      }
+
+      > div:last-child {
+        margin-right: none;
+      }
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+section.end {
+  width: 80%;
+  margin: 1rem auto;
+
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+  }
+
+  display: flex;
+
+  > div {
+    width: 50%;
+  }
+
+  > .left {
+    img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  > .right {
+    h4 {
+      margin-bottom: 1rem;
+    }
+  }
+}

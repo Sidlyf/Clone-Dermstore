@@ -1,0 +1,59 @@
+section.navbar {
+    width: 80%;
+    margin: 1rem auto
+}
+
+section.navbar>.first-row {
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+section.navbar>.first-row a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem
+}
+
+section.navbar>.first-row>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer
+}
+
+section.navbar>.first-row>div img {
+    padding-right: 10px
+}
+
+section.navbar>.first-row>.search>input {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    min-width: 240px
+}
+
+section.navbar .second-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 4px
+}
+
+section.navbar .second-row :hover {
+    background-color: #d8d8d8
+}
+
+section.navbar .second-row>.link {
+    padding: 0.8rem 1.5rem
+}
+
+section.navbar .second-row a {
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.1rem
+}

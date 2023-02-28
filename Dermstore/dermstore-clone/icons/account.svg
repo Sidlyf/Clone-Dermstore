@@ -1,0 +1,13 @@
+<svg class="responsiveAccountHeader_accountIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+	<g fill="none" fill-rule="evenodd">
+		<g fill="#333" fill-rule="nonzero">
+			<g>
+				<g>
+					<g>
+						<path d="M12 10c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm0 2c-2.761 0-5-2.239-5-5s2.239-5 5-5 5 2.239 5 5-2.239 5-5 5zm-7 9H3c0-3.866 4.03-7 9-7s9 3.134 9 7h-2c0-2.636-3.04-5-7-5s-7 2.364-7 5z" transform="translate(-1146 -76) translate(17 68) translate(1121) translate(8 8)"></path>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

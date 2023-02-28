@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/363b66d6ae.js" crossorigin="anonymous"></script>
+    <title>Add To Cart</title>
+
+
+</head>
+
+<body>
+
+    <section class="navbar">
+    
+        <div class="first-row">
+            <img src="./icons/header_logo.svg" alt="">
+            <div class="search">
+                <input type="text" name="search" placeholder="search for product and brand" id="">
+            </div>
+            <div class="account"><img src="./icons/account.svg" alt="">
+                <a href="login.html">Account</a>
+            </div>
+            <div class="account"><img src="./icons/cart.svg" alt="">
+                <a href="cart.html">Cart</a>
+            </div>
+    
+        </div>
+        <div class="second-row">
+    
+            <div class="link"><a href="">Brands</a></div>
+            <div class="link"><a href="skin-care.html">skin care </a></div>
+            <div class="link"><a href="makeup.html">make up </a></div>
+            <div class="link"><a href="hair.html">hair care </a></div>
+            <div class="link"><a href="bath.html">bath & body </a></div>
+            <div class="link"><a href="tools.html">tools & devices </a></div>
+            <div class="link"><a href="gifts.html">tools & devices </a></div>
+            <div class="link"><a href="beautyfix.html">BeautyFIX</a></div>
+            <div class="link"><a href="skin-101.html">Skin 101</a></div>
+        </div>
+    
+    
+    </section>
+
+
+    <hr>
+    <div id="id1">
+        <div id="item">
+            <h1>item</h1>
+        </div>
+        <div id="id2">
+
+            <h1>price</h1>
+            <h1>quantity</h1>
+            <h1>subtotal</h1>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="main"></div>
+
+
+<section class="mid" id="">
+    <div class="wrapper1">
+        <div class="left-part">
+            <p>
+                Sign up to our newsletters and receive the latest exclusive discounts and deals
+            </p>
+            <button class="btn btn-primary">sign me up</button>
+        </div>
+
+        <div class="right-part">
+            <p>Connect with us</p>
+            <div class="icons-part">
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper2">
+
+        <div class="left">
+            <h4>Customere Service</h4>
+            <p>Help Center / FAQs</p>
+            <p>Returns</p>
+            <p>Shipping Information</p>
+            <p>Order Status</p>
+            <p>Cookie Settings</p>
+        </div>
+
+        <div class="right">
+            <div>
+                <h4>My Account</h4>
+                <p>Manage My Subscriptions</p>
+                <p>My Rewards</p>
+                <p>My Favorites</p>
+                <p>Referrals</p>
+                <p>Order History</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <p>About us</p>
+                <p>Press</p>
+                <p>What is klarna?</p>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <p>Privacy Policy</p>
+                <p>Terms & conditions</p>
+                <p>Modern Slavery Statetement</p>
+                <p>Product Recall</p>
+                <p>Accessibility</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="end">
+
+    <div class="left">
+        <img src="./icons/copyright.svg" alt="">
+        <p>2022 © The Hut.com Ltd.</p>
+    </div>
+
+    <div class="right">
+
+        <h4>Pay Securely with</h4>
+
+
+        <img src="./icons/visa-electron.svg" alt="">
+        <img src="./icons/visa.svg" alt="">
+        <img src="./icons/paypal.svg" alt="">
+        <img src="./icons/mastercard.svg" alt="">
+        <img src="./icons/maestro.svg" alt="">
+        <img src="./icons/americanexpress.svg" alt="">
+        <img src="./icons/discover.svg" alt="">
+        <img src="./icons/dixersclub.svg" alt="">
+        <img src="./icons/applepay.svg" alt="">
+        <img src="./icons/aferpay.svg" alt="" srcset="">
+        <img src="./icons/klarna.svg" alt="">
+        <img src="./icons/sezzle.svg" alt="">
+
+    </div>
+
+</section>
+
+
+</body>
+
+</html>
+<script>
+    var data = JSON.parse(localStorage.getItem("main")) || []
+        // console.log(data)4
+
+    // data[1].quantity = 1
+    // localStorage.setItem('main', JSON.stringify(data))
+
+
+    data.forEach(function(elem, index) {
+        var count;
+        if (localStorage.getItem("cc") == null) {
+
+            count = 1
+        } else {
+            count = localStorage.getItem("cc")
+        }
+
+        // var box = document.createElement("div")
+        var main = document.querySelector("#main")
+        var maindiv = document.createElement("div")
+        var div1 = document.createElement("div")
+        var img1 = document.createElement("img")
+        img1.setAttribute("src", elem.image)
+        var div = document.createElement("div")
+        div.setAttribute("id", "hp")
+        var h1 = document.createElement("h1")
+        h1.innerText = elem.hdesc
+
+        var h2 = document.createElement("h1")
+        h2.innerText = elem.para
+
+        div.append(h1, h2)
+        div1.append(img1, div)
+        var div2 = document.createElement("div")
+        var div3 = document.createElement("div")
+        div3.setAttribute("id", "idpara")
+        var p1 = document.createElement("p")
+
+        p1.innerText = "$" + (elem.price * elem.quantity)
+
+        div3.append(p1)
+        var div4 = document.createElement("div")
+        div4.setAttribute("id", "quantity")
+
+        var decrea = document.createElement("button")
+        decrea.innerText = "-"
+        var qua = document.createElement("h3")
+        qua.innerText = elem.quantity
+
+        var increa = document.createElement("button")
+        increa.innerText = "+"
+        decrea.addEventListener("click", function() {
+            if (--elem.quantity < 1) {
+                elemq.quantity = 1
+            }
+            qua.innerText = elem.quantity
+            p1.innerText = "$" + (elem.price * elem.quantity)
+
+            p2.innerText = p1.innerText
+
+            localStorage.setItem("main", JSON.stringify(data))
+
+
+            window.location.reload();
+
+        });
+        increa.addEventListener("click", function() {
+            elem.quantity++
+                qua.innerText = elem.quantity
+            p1.innerText = "$" + (elem.price * elem.quantity)
+
+            // p1.innerText = elem.price * elem.quantity
+            p2.innerText = p1.innerText
+
+            localStorage.setItem("main", JSON.stringify(data))
+            window.location.reload();
+
+
+        });
+
+        div4.append(decrea, qua, increa)
+
+        var div5 = document.createElement("div")
+        div5.setAttribute("id", "subtot")
+        var p2 = document.createElement("p")
+        p2.innerText = "$" + (elem.price * elem.quantity)
+
+        div5.append(p2)
+        var div6 = document.createElement("div")
+        var btn = document.createElement("button")
+        btn.setAttribute("id", "cutt")
+        btn.innerText = "X"
+        btn.addEventListener("click", function() {
+            deleteit(elem, index)
+        })
+        div6.append(btn)
+        div2.append(div3, div4, div5, div6)
+        maindiv.append(div1, div2)
+
+
+
+        main.append(maindiv)
+        var favdiv = document.createElement("div")
+        favdiv.setAttribute("id", "favdiv")
+            // var heartbtn = document.createElement("div")
+        var heart = document.createElement("div")
+        heartp = document.createElement("p")
+        heartp.innerText = "♡" + " " + "Save To My Favorites"
+        heart.append(heartp)
+        var favh = document.createElement("h4")
+        favh.setAttribute("id", "favh")
+
+        // favh.innerText = 
+        favdiv.append(heart)
+        var hr = document.createElement("hr")
+        var br = document.createElement("br")
+        main.append(favdiv, br, hr)
+        document.querySelector("body").append(main)
+        localStorage.setItem("main", JSON.stringify(data))
+
+    });
+
+    // localStorage.setItem("cc", data)
+
+    function deleteit(elem, index) {
+
+        data.splice(index, 1)
+        localStorage.setItem("main", JSON.stringify(data))
+        window.location.reload();
+        // data.
+    }
+
+    // }
+</script>
